@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#060e26"><meta name="description" content="AeroPulse: Sky Assault — 20-stage arcade jet shooter with auto-fire, enemy aircraft, missiles, bombs and 20 escalating boss battles, checkpoints and alien enemies.">
+<title>AeroPulse: Sky Assault — Boss Gauntlet V6</title><link rel="icon" type="image/svg+xml" href="./assets/favicon.svg"><link rel="stylesheet" href="./styles.css">
+<!-- Public GitHub Pages build: no YouTube SDK required. -->
+<script src="./app.js" defer></script>
+</head><body><main id="app"><canvas id="screen" aria-label="Arcade fighter jet battle area; drag sky or use arrow keys to steer; weapons fire automatically"></canvas>
+<div id="hud" class="hidden">
+ <div class="hud-top"><div class="identity"><div id="lv">LEVEL 01</div><div id="world">BLUE SKY PATROL</div></div><div class="hud-pills"><div class="hud-pill"><span class="glyph gold">★</span><b id="hudScore">000000</b></div><div class="hud-pill"><span class="glyph coin">◉</span><b id="hudCoins">0</b></div></div><button id="pause" class="hud-pause" aria-label="Pause game">Ⅱ</button></div>
+ <div class="hud-bottom-top"><span id="healthText">HULL 100%</span><div class="healthTrack"><div id="healthBar"></div></div><span class="shieldLabel" id="shieldLabel">SHIELD</span><div class="shieldTrack"><div id="shieldBar"></div></div></div>
+ <div class="mission-objective" id="objective">CLEAR THE AIRSPACE</div>
+ <div class="stage-line"><span id="stageLabel">STAGE PROGRESS</span><div class="stageTrack"><div id="stageBar"></div></div><span id="stagePercent">0%</span></div>
+ <div id="bossHud" class="boss-hud hidden"><b id="bossName">BOSS: SKY FORTRESS</b><div class="bossTrack"><div id="bossBar"></div></div></div>
+ <div id="combo" class="combo hidden">COMBO ×2</div>
+</div>
+<div id="weaponControls" class="weapons hidden"><button id="missileBtn" class="weapon missile" aria-label="Launch missile"><span class="weaponIcon">➤</span><strong>MISSILE</strong><small id="missileCount">4 LEFT</small></button><button id="bombBtn" class="weapon bomb" aria-label="Drop screen bomb"><span class="weaponIcon">✹</span><strong>BOMB</strong><small id="bombCount">2 LEFT</small></button></div>
+<div id="flyHint" class="fly-hint hidden">DRAG SKY / MOVE MOUSE TO FLY · GUN AUTO-FIRES · TAP WEAPONS</div>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+<section id="overlay" class="overlay"><div class="menu-card" id="panel"><h1>AEROPULSE</h1><p>Loading mission systems…</p></div></section>
+</main></body></html>
